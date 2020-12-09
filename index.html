@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Web Design</title>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <img src="images/logo.png">
+               </div>
+            <nav>
+              <ul>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Projects</a></li>
+                      <li><a href="">Interests</a></li>
+                      <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="user">
+                      <p>Dim.K</p>
+                      <img src="images/d.kand.jpg" >
+              </div>
+        </div>
+
+        <div class="sidebar">
+                <img src="images/search.png" class="search-icon">
+                <div class="social-links">
+                        <img src="images/in.png">
+                        <img src="images/github.png">
+                        <img src="images/tw.png">
+                </div>
+                <img src="images/info.png" class="info-icon">
+        </div>
+
+        <div class="img-container">
+          <div id="slider">
+            <div class="msg-col">
+                    <<h2>About</h2>
+                    <p>This is an example of website building using CSS, HTML and a pies of JS code inside of HTML.</p>
+                    <a href="">Lean More</a>
+            </div>
+
+            <div class="msg-col">
+                    <h2>Projects</h2>
+                    <p>Projects start from idea or somebody's needs. </p>
+                    <a href="">Lean More</a>
+            </div>
+
+            <div class="msg-col">
+                    <h2>Interests</h2>
+                    <p>Important to let your brain relax. Just switch the activity and solution definitely will come.</p>
+                    <a href="">Lean More</a>
+            </div>
+
+            <div class="msg-col">
+                    <h2>Contact</h2>
+                    <p>Be in touch with people. They need you as well.</p>
+                    <a href="">Lean More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="controller">
+                        <table  >
+                          <tr>
+                <th id="line1"> </th>
+                <th id="line2"></th>
+                <th id="line3"></th>
+                <th id="line4"></th>
+                </tr>
+              </table>
+<div id="active"></div>
+        </div>
+        <script>
+          let slider = document.getElementById('slider');
+          let active = document.getElementById('active');
+          let line1 = document.getElementById('line1');
+          let line2 = document.getElementById('line2');
+          let line3 = document.getElementById('line3');
+          let line4 = document.getElementById('line4');
+
+          line1.onclick = function(){
+            slider.style.transform = 'translateX(0)';
+            active.style.left = '0px';
+          }
+          line2.onclick = function(){
+            slider.style.transform = 'translateX(-25%)';
+            active.style.left = '80px';
+          }
+          line3.onclick = function(){
+            slider.style.transform = 'translateX(-50%)';
+            active.style.left = '160px';
+          }
+          line4.onclick = function(){
+            slider.style.transform = 'translateX(-75%)';
+            active.style.left = '240px';
+          }
+        </script>
+
+  </body>
+</html>
